@@ -162,3 +162,34 @@ footer {
     max-width: 600px;
     line-height: 1.7;
 }
+
+.hobbies {
+    padding: 80px 10%;
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid #00faff33;
+    border-bottom: 1px solid #00faff33;
+}
+
+.hobbies-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies li {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    color: #b3ffff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 6px #00faff66;
+    transition: 0.3s ease;
+}
+
+.hobbies li:hover {
+    color: #00faff;
+    text-shadow: 0 0 12px #00faff;
+}
