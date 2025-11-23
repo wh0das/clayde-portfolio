@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0f14;
+    color: #e6e6e6;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.4);
+    z-index: 100;
+}
+
+.logo {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 2px;
+    color: #00faff;
+    font-size: 1.3rem;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #00faff;
+}
+
+.hero {
+    height: 100vh;
+    background: url("https://preview.redd.it/sword-art-online-game-clear-celebration-visual-v0-bz4ti8198fzd1.jpeg?width=1080&crop=smart&auto=webp&s=a3be45b39c65e10768e368e6e3258c48ad87f6cb") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #00faff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 1px solid #00faff;
+    color: #00faff;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00faff;
+    color: #000;
+}
+
+section {
+    padding: 80px 60px;
+}
+
+.section-title {
+    font-family: "Orbitron", sans-serif;
+    color: #00faff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.projects {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    padding: 20px;
+    border: 1px solid #00faff55;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: #00faff;
+    box-shadow: 0 0 20px #00faff55;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00faff55;
+    color: #888;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #00faff;
+    box-shadow: 0 0 20px #00faff66;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about p {
+    max-width: 600px;
+    line-height: 1.7;
+}
